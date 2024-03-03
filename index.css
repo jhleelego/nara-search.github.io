@@ -17,25 +17,26 @@ main {
 }
 .searchbar {
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-end;
   align-items: center;
-  margin-bottom: 10px;
+  box-sizing: border-box;
 }
-
 label {
   margin-top: 4px;
   font-size: 14px;
+  white-space: nowrap;
 }
 input {
+  margin-top: 4px;
   margin-left: 4px;
   padding: 0px 5px;
   height: 24px;
-  margin-top: 4px;
 }
 
 button {
-  margin-left: 4px;
   margin-top: 4px;
+  margin-left: 4px;
   height: 28px;
   padding: 5px 10px;
   cursor: pointer;
@@ -50,17 +51,24 @@ button:hover {
   background-color: #2980b9;
 }
 
+#tableInfo {
+  font-size: 14px;
+  margin-top: 20px;
+}
+
 table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 10px;
+  margin-top: 4px;
 }
 
 th,
 td {
   border: 1px solid #ddd;
-  padding: 8px;
+  padding: 4px;
   text-align: left;
+  font-size: 14px;
+  text-align: center;
 }
 
 th {
@@ -75,8 +83,10 @@ th {
 }
 
 #paginationButtons button {
-  padding: 8px;
-  margin-right: 5px;
+  width: 26px;
+  padding: 0px;
+  font-size: 12px;
+  text-align: center;
   cursor: pointer;
   background-color: #3498db;
   color: #fff;
