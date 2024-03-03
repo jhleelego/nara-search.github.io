@@ -410,7 +410,7 @@ function updateTable(data) {
 
   // Display information about the number of items
   const tableInfo = document.getElementById("tableInfo");
-  tableInfo.textContent = `총 ${countryList.length}국가 중 ${data.length}국가 검색되었습니다.`;
+  tableInfo.textContent = `총 ${countryList.length}국가 중 ${data.length}국가가 검색되었습니다.`;
 }
 
 function updatePaginationButtons(totalItems) {
