@@ -1,0 +1,84 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0 auto;
+}
+h1 {
+  display: flex;
+  align-items: center;
+  background-color: #3498db;
+  padding: 0px;
+  margin: 0 auto;
+  padding: 8px;
+  font-size: 16px;
+  color: white;
+}
+main {
+  padding: 4px;
+}
+.searchbar {
+  margin-bottom: 10px;
+}
+
+label {
+  margin-top: 4px;
+}
+input {
+  padding: 0px 5px;
+  height: 24px;
+  margin-top: 4px;
+}
+
+button {
+  margin-top: 4px;
+  height: 28px;
+  padding: 5px 10px;
+  cursor: pointer;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #3498db;
+  color: #fff;
+}
+
+#paginationButtons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+#paginationButtons button {
+  padding: 8px;
+  margin-right: 5px;
+  cursor: pointer;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+}
+
+#paginationButtons button:hover {
+  background-color: #2980b9;
+}

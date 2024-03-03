@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>국가코드 검색(Country Code Search)</title>
+    <meta name="description" content="빠른 국가코드 검색" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./index.css" />
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+  </head>
+  <body>
+    <h1>
+      <img
+        src="./kr.png"
+        style="width: 20px; height: 20px"
+        alt="국가코드 검색"
+      />국가코드 검색(Country Code Search)
+    </h1>
+    <main>
+      <div class="searchbar">
+        <label for="searchInput" id="searchLabel">Search:</label>
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="검색어를 입력하세요."
+        />
+        <button onclick="search()">Search</button>
+        <button onclick="resetTable()">Reset</button>
+      </div>
+      <div id="tableInfo"></div>
+      <table>
+        <thead>
+          <tr>
+            <th>국가코드(Country Code)</th>
+            <th>국가명(한글)</th>
+            <th>국가명(영문)</th>
+          </tr>
+        </thead>
+        <tbody id="countryTableBody"></tbody>
+      </table>
+      <div id="paginationButtons"></div>
+    </main>
+    <script src="./index.js" defer></script>
+  </body>
+</html>
